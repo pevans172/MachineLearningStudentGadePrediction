@@ -42,7 +42,8 @@ def add_important_cats(df1):
 try:
     studentInfoEdited = pd.read_csv(pathlib.Path.cwd() / 'Data' / 'studentInfoEdited.csv')
     print(studentInfoEdited.head())
-# if not then go ahead and make the file, which takes a few mins
+# if not then go ahead and make the file
+# This takes 15 minutes
 except:
     studentInfo = pd.read_csv(pathlib.Path.cwd() / 'Data' / 'studentInfo.csv')
     studentAsses = pd.read_csv(pathlib.Path.cwd() / 'Data' / 'studentAssessment.csv')
